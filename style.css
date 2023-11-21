@@ -72,9 +72,10 @@ body {
 }
 
 footer {
-    background-color: #E43E84;
+    background-color: #e43e83b7;
     width: 100%;
     text-align: center;
+    border-radius: 100px
 }
 
 .footer {
@@ -84,3 +85,8 @@ footer {
     padding-left: 30px;
 }
 
+img {
+    position: absolute;
+    left: 35%;
+    top: 65px;
+}
