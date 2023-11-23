@@ -102,11 +102,12 @@ body {
     color: #d0f1f2;
 }
 
-@media screen and (max-width: 601px) {
+@media screen and (max-width: 650px) {
     .page {
         min-width: 100px;
         width: 100%;
-        margin-top: 100px;
+        position: absolute;
+        top: 450px;
     }
 
     .subscribe-value {
