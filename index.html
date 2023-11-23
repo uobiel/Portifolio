@@ -28,11 +28,13 @@
 
                 <a class="esqueci" href="#">Esqueci minha senha</a>
 
-                <input type="submit" value="Acessar" class="input-submit" onclick="aviso()">
+                <input type="submit" value="Acessar" class="input-submit" onclick="login()">
 
                 <p class="new-account">Ainda não tem conta? <a href="#" class="nova-senha">Crie uma agora</a></p>
             </form>
         </main>
+
+
 
     </div>
 
@@ -46,9 +48,18 @@
 
 <script>
 
-    function aviso(){
-        alert('Funcionalidade ainda não implementada, tela de testes!!!')
-    }
+        function login(){
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('password').value;
+
+            if(email === 'wobiel' && senha === '1234'){
+                window.location.href = "dev.html";
+            } else {
+                alert('Email ou senha incorretos.')
+            }
+
+        }
+
 
 </script>
 
