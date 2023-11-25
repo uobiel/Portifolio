@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="modal.js"></script>
+</head>
+<body>
+
+<!-- Botão para abrir o modal -->
+<button class="open-modal-btn" onclick="openModal()">Abrir Modal</button>
+
+<!-- O modal -->
+<div id="myModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="button-close" onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+
+        <div id="cabecalho">
+            <h2>
+                Modal de Teste
+            </h2>
+        </div>
+
+        <div id="conteudo">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci explicabo iure porro alias laboriosam eum eveniet est ullam. Blanditiis corporis nisi voluptate dolorum quia error odio! Incidunt atque nesciunt at.</p>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

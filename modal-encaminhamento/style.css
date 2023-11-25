@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando o modal */
+.modal {
+    display: none; /* Ocultar por padrão */
+    position: fixed; /* Posição fixa */
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s, visibility 0.5s;
+}
+
+.modal-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+.modal-content {
+    margin: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+/* Estilizando o botão para abrir o modal */
+.open-modal-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.button-close {
+    font-size: 30px;
+}
+
+#cabecalho {
+    margin-bottom: 18px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+.h2 {
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.acess-button {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.acess-button:hover {
+    background-color: #4CAF50;
+}
+
+#botoesAcao {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.close, .continua {
+    width: 50%;
+    margin: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.continua {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.continua:hover {
+    background-color: #4caf4fd7;
+}
+
+.close:hover {
+    background-color: aliceblue;
+}
