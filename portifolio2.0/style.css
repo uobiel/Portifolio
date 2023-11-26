@@ -104,15 +104,33 @@
 }
 
 .projetos {
-    margin-top: 20px;
+    padding-top: 50px;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.img-projetoUm, .img-projetoDois {
+    border-radius: 20px;
 }
 
 
+.projetoUm-img{
+    width: auto;
+}
+
 .img-projetoUm {
-    width: 100%;
-    max-width: 600px;
+    width: auto;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.projetoDois-img{
+    width: auto;
+}
+
+.img-projetoDois {
+    width: auto;
+    height: 200px;
 }
 
 .text {
