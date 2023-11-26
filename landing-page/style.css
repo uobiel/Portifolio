@@ -1,0 +1,285 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.larguraPage {
+    /* background-color: #4E9DAC; */
+    width: 90%;
+    margin: 40px;
+}
+
+.page {
+    background-color: #071322;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    width: 100%;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.nomePag {
+    display: flex;
+    justify-content: flex-start;
+    color: #B8BFFF;
+    padding-bottom: 20px;
+    margin-left: 70px;
+}
+
+.menus {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu {
+    text-decoration: none;
+    color: #B8BFFF;
+    margin-right: 70px;
+    margin-left: 50px;
+}
+
+.efeito p {
+    color: #0E3A42;
+}
+
+.efeito p.efect{
+    color: black;
+    font-weight: bold;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeiraFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.segundaFila {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 90%;
+}
+
+.card1 {
+    background-color: #93D6E2;
+    border: 1px solid #4E9DAC;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+    border-radius: 30px;
+}
+
+.card2 {
+    background-color: white;
+    width: 100%;
+    border-radius: 30px;
+    margin: 10px;
+    height: 400px;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+} 
+
+ .card3 {
+    background-color: #4E9DAC;
+    width: 100%;
+    height: 326px;
+    border-radius: 30px;
+    border: 1px solid #666981;  
+    background: #343643;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card4 {
+    background-color: #B8BFFF;
+    padding: 32px;
+    width: 70%;
+    height: 320px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+}
+
+.button {
+    margin-top: 10%;
+    background-color: #000;
+    width: 120px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.carrinho {
+    background-color: #B8BFFF;
+    border-radius: 100%;
+    padding: 4px;
+    margin-right: 5px;
+}
+
+.title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    font-size: 50px;
+    font-family: Bricolage Grotesque;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+}
+
+p:hover {
+    background-color: #ffffff;
+    color: #000;
+    width: 100%;
+}
+
+
+.card5 {
+    background-color: #DABDA9;
+    padding: 32px;
+    width: 60%;
+    height: 320px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+    font-family: Bricolage Grotesque;
+}
+
+.card5-img {
+    margin-bottom: 20px;
+}
+
+.card5 p{
+    font-size: 50px;
+}
+
+p {
+    color: black;
+}
+
+.card3, card4, card5 {
+    margin-right: 10px;
+}
+
+.ajustes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonClasses {
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .card1, .card2 {
+        height: 300px;
+    }
+
+    .segundaFila {
+        display: block;
+    }
+
+    .card3, .card4 {
+        height: 300px;
+    }
+
+    .card4 p {
+        font-size: 40px;
+    }
+
+    .card5 p {
+        font-size: 20px;
+    }
+
+    .button p {
+        font-size: 15px;
+    }
+
+    .ajustes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .primeiraFila, .segundaFila {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .card2 img {
+        min-width: 58%;
+    }
+
+
+    .card3 {
+        width: 100%;
+    }
+
+
+    .card4 {
+        width: 100%;
+    }
+
+    .card5 {
+        width: 100%;
+    }
+
+    .segundaFila {
+        width: 100%;
+    }
+
+    
+}
