@@ -25,10 +25,15 @@ body {
 
 .modal-content {
     margin: 10px;
-    background-color: #fff;
-    padding: 40px;
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 20px;
     max-width: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Estilizando o botão para abrir o modal */
@@ -47,7 +52,6 @@ body {
 
 #cabecalho {
     margin-bottom: 18px;
-    border-bottom: 1px solid black;
     text-align: center;
 }
 
@@ -96,4 +100,41 @@ body {
 
 .close:hover {
     background-color: aliceblue;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.opcoes button{
+    width: 50%;
+    padding: 10px;
+    border: 5px;
+    border-radius: 5px;
+    margin: 20px 10px 0px 10px; 
+    cursor: pointer;
+}
+
+#voltar {
+    background-color: rgb(173, 173, 173);
+    color: white;
+    font-size: 17px;
+}
+
+#voltar:hover {
+    background-color: rgba(173, 173, 173, 0.811);
+    color: white;
+    transform: scale(1.02);
+}
+
+#continuarLinkedin, #continuarInstagram, #continuarWhatsapp{
+    background-color: #66c269;
+    color: azure;
+    font-size: 17px;
+}
+
+#continuarLinkedin:hover, #continuarWhatsapp:hover, #continuarInstagram:hover{
+    background-color: #66c269d1;
+    transform: scale(1.02);
 }

@@ -4,15 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #071322;
+}
+
 .larguraPage {
-    /* background-color: #4E9DAC; */
     width: 90%;
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .page {
     background-color: #071322;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +28,38 @@
 .cabecalho {
     width: 100%;
     font-family: 'Bricolage Grotesque', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
+
+
 .nomePag {
+    width: 85%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.nomePag h1 {
+    width: 350px;
+    padding-left: 30px;
     color: #B8BFFF;
-    padding-bottom: 20px;
-    margin-left: 70px;
+}
+
+.perfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
 }
 
 .menus {
@@ -43,14 +74,18 @@
     text-decoration: none;
     color: #B8BFFF;
     margin-right: 70px;
-    margin-left: 50px;
+    margin-left: 30px;
+}
+
+#espacoMenu {
+    margin-right: 100px;
 }
 
 .efeito p {
     color: #0E3A42;
 }
 
-.efeito p.efect{
+.efeito p.efect {
     color: black;
     font-weight: bold;
     font-family: 'Bricolage Grotesque', sans-serif;
@@ -67,13 +102,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 88%;
 }
 
 .segundaFila {
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
     width: 90%;
 }
 
@@ -81,7 +116,7 @@
     background-color: #93D6E2;
     border: 1px solid #4E9DAC;
     width: 100%;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,41 +124,86 @@
     border-radius: 30px;
 }
 
+.card1:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.card3:hover,
+.card4:hover,
+.card5:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.card2:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do card ao passar o mouse */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.card1:hover::before {
+    opacity: 1;
+    content: "Meu nome é Gabriel Antunes, tenho 20 anos e estou imerso no mundo da Tecnologia da Informação há mais de um ano, desempenhando o papel de QA (Garantia de Qualidade). No momento, estou focado em aprimorar minhas habilidades para trilhar o caminho de tornar-me um Desenvolvedor Front End.";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    color: #071322;
+    background-color: #93D6E2;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.card1:hover .efeito {
+    display: none;
+}
+
 .card2 {
     background-color: white;
-    width: 100%;
-    border-radius: 30px;
     margin: 10px;
-    height: 400px;
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    border: 1px solid #4E9DAC;
 }
 
 .card2 img {
     width: 100%;
     height: 100%;
-} 
-
- .card3 {
-    background-color: #4E9DAC;
-    width: 100%;
-    height: 326px;
     border-radius: 30px;
-    border: 1px solid #666981;  
-    background: #343643;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.card4 {
+.menus a:hover {
+    transform: scale(1.5);
+    margin-bottom: 15px;
+}
+
+.card4,
+.card3,
+.card5 {
     background-color: #B8BFFF;
     padding: 32px;
-    width: 70%;
-    height: 320px;
+    width: 90%;
+    height: 300px;
     border-radius: 32px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 10px;
     color: white;
+}
+
+.card4 {
+    background-color: #D6FFF2;
+}
+
+.card5 {
+    background-color: #FFD9B8;
 }
 
 .button {
@@ -160,42 +240,19 @@
     color: black;
 }
 
-p:hover {
-    background-color: #ffffff;
-    color: #000;
-    width: 100%;
-}
-
-
-.card5 {
-    background-color: #DABDA9;
-    padding: 32px;
-    width: 60%;
-    height: 320px;
-    border-radius: 32px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 10px;
-    color: white;
-    font-family: Bricolage Grotesque;
-}
-
 .card5-img {
     margin-bottom: 20px;
-}
-
-.card5 p{
-    font-size: 50px;
 }
 
 p {
     color: black;
 }
 
-.card3, card4, card5 {
+.card3,
+card4,
+card5 {
     margin-right: 10px;
+    border: 1px solid #4E9DAC;
 }
 
 .ajustes {
@@ -209,9 +266,14 @@ p {
     color: #ffffff;
 }
 
-
 @media screen and (max-width: 1200px) {
-    .card1, .card2 {
+
+    .page {
+        height: 100%;
+    }
+
+    .card1,
+    .card2 {
         height: 300px;
     }
 
@@ -219,8 +281,10 @@ p {
         display: block;
     }
 
-    .card3, .card4 {
+    .card3,
+    .card4 {
         height: 300px;
+        width: 97%;
     }
 
     .card4 p {
@@ -241,17 +305,47 @@ p {
         align-items: center;
     }
 
+        .nomePag {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nomePag h1 {
+        width: auto;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .perfil {
+        margin-bottom: 10px;
+    }
+
+    .menus {
+        justify-content: space-between;
+    }
+
+    .menu {
+        margin: 0 10px;
+    }
+
+    #espacoMenu {
+        margin-right: 10px;
+    }
+
+    .nomePag h1 {
+        margin-left: 10px;
+    }
 }
 
-
 @media screen and (max-width: 600px) {
-    .primeiraFila, .segundaFila {
+    .primeiraFila,
+    .segundaFila {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    .card1 {
+        .card1 {
         width: 100%;
     }
 
@@ -263,11 +357,9 @@ p {
         min-width: 58%;
     }
 
-
     .card3 {
         width: 100%;
     }
-
 
     .card4 {
         width: 100%;
@@ -280,6 +372,82 @@ p {
     .segundaFila {
         width: 100%;
     }
+}
 
-    
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nomePag,
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+    animation: fadeInUp 1s ease-out;
+}
+
+.nomePag h1:hover {
+    animation: rotateAnimation 1s ease-in-out infinite;
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Adicione estas regras de mídia no final do seu arquivo CSS */
+
+
+@media screen and (max-width: 600px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .perfil {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 8px;
+    }
+
+    .perfil img {
+        width: 30px;
+        height: auto;
+    }
+
+    .perfil h1 {
+        margin-top: 10px;
+    }
+
+    .menus {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20% 0 5% 0;
+    }
+
+    .menu {
+        margin: 5px 0;
+    }
+
+    #espacoMenu {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
